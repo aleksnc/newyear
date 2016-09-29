@@ -1,0 +1,30 @@
+.main-post{
+  max-width: 1200px;
+  margin:    0 auto;
+  display:   flex;
+  &__wrapper {
+    width: 100%;
+    padding: 30px 20px;
+    background-image: url(/img/bg2.jpg);
+    background-size: cover;
+
+  }
+  &__info{
+    height: 452px;
+    display: inline-block;
+    flex-grow: 2;
+    margin-right: 20px;
+    background: rgba(255, 255, 255, 0.6);
+    padding: 20px;
+  }
+
+  &__title{
+    &:extend(.title);
+    max-width: 478px;
+    text-align: left;
+  }
+
+  &__description{
+    padding: 10px 0;
+  }
+}

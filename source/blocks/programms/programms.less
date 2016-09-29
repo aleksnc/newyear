@@ -1,0 +1,46 @@
+.programms{
+  position: relative;
+  max-width: 1200px;
+  margin: 0 auto;
+  margin-top: 100px;
+
+  &__programm{
+
+  }
+
+  &__name{
+    color: @color-primary;
+    font-size: 18px;
+    width: 340px;
+    padding-top: 100px;
+    display: inline-block;
+    background-image: url('/img/icon/food.png');
+    background-repeat: no-repeat;
+    background-position: center 0;
+    background-size: 90px;
+
+    &:hover{
+      color: @color-primary;
+      background-image: url('/img/icon/food_h.png');
+      font-weight: bold;
+    }
+
+    &--child{
+      background-image: url('/img/icon/christmas-tree.png');
+
+      &:hover{
+        color: @color-primary;
+        background-image: url('/img/icon/christmas-tree_h.png');
+      }
+    }
+
+    &--parent{
+      background-image: url('/img/icon/food-1.png');
+
+      &:hover{
+        color: @color-primary;
+        background-image: url('/img/icon/food-1_h.png');
+      }
+    }
+  }
+}

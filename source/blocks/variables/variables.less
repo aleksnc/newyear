@@ -1,0 +1,71 @@
+@text-size-header:                    56px;
+@text-size-xxl:                       36px;
+@text-size-xl:                        30px;
+@text-size-l:                         18px;
+@text-size:                           16px;
+@text-size-sm:                        14px;
+
+@color-primary:                       #1f3942;
+@color-second:                        #95c9cc;
+@color-tertiary:                      #e08358;
+@color-four:                          #ee1d24;
+@color-five:                          #fff5c9;
+
+
+@gray-dark:                           #191919;
+@gray-shadow:                         #4c4c4c;
+@gray:                                #838383;
+@gray-light:                          #e3dede;
+@gray-wight:                          #fafafa;
+
+@font-face {
+  font-family: 'steelfishRg';
+  font-style: normal;
+  font-weight: 400;
+  src: url('/font/steelfish_rg.otf');
+  src: url('/font/steelfish rg.tf');
+}
+
+
+@font-family:                       "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+@font-family-h:                     Lobster;
+
+@img-path:                            '../img/';
+
+
+h1{
+  margin: 0;
+  padding: 0;
+  font-size: (@text-size-xl)+2;
+}
+
+h2{
+  margin: 0;
+  padding: 0;
+  font-size: (@text-size-xl)-2;
+}
+
+
+.title{
+  font-family:                        @font-family;
+  color:                              @color-primary;
+  font-weight:                        bold;
+  font-size:                          (@text-size-xxl)-2;
+  margin:                             0;
+  display:                            block;
+  margin:                             0;
+  padding:                            0;
+  text-align:                         center;
+}
+
+.star{
+  &:after{
+    content: "*";
+    color: red;
+  }
+}
+
+.all_content{
+  min-height: 100%;
+  padding-bottom:  100px;
+}

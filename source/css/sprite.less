@@ -1,0 +1,242 @@
+/*
+LESS variables are information about icon's compiled state, stored under its original file name
+
+.icon-home {
+  width: @icon-home-width;
+}
+
+The large array-like variables contain all information about a single icon
+@icon-home: x y offset_x offset_y width height total_width total_height image_path name;
+
+At the bottom of this section, we provide information about the spritesheet itself
+@spritesheet: width height image @spritesheet-sprites;
+*/
+@balloons-name: 'balloons';
+@balloons-x: 128px;
+@balloons-y: 0px;
+@balloons-offset-x: -128px;
+@balloons-offset-y: 0px;
+@balloons-width: 128px;
+@balloons-height: 128px;
+@balloons-total-width: 512px;
+@balloons-total-height: 512px;
+@balloons-image: '../img/spritesheet.png';
+@balloons: 128px 0px -128px 0px 128px 128px 512px 512px '../img/spritesheet.png' 'balloons';
+@balloons-h-name: 'balloons_h';
+@balloons-h-x: 128px;
+@balloons-h-y: 256px;
+@balloons-h-offset-x: -128px;
+@balloons-h-offset-y: -256px;
+@balloons-h-width: 128px;
+@balloons-h-height: 128px;
+@balloons-h-total-width: 512px;
+@balloons-h-total-height: 512px;
+@balloons-h-image: '../img/spritesheet.png';
+@balloons-h: 128px 256px -128px -256px 128px 128px 512px 512px '../img/spritesheet.png' 'balloons_h';
+@christmas-tree-name: 'christmas-tree';
+@christmas-tree-x: 0px;
+@christmas-tree-y: 128px;
+@christmas-tree-offset-x: 0px;
+@christmas-tree-offset-y: -128px;
+@christmas-tree-width: 128px;
+@christmas-tree-height: 128px;
+@christmas-tree-total-width: 512px;
+@christmas-tree-total-height: 512px;
+@christmas-tree-image: '../img/spritesheet.png';
+@christmas-tree: 0px 128px 0px -128px 128px 128px 512px 512px '../img/spritesheet.png' 'christmas-tree';
+@christmas-tree-h-name: 'christmas-tree_h';
+@christmas-tree-h-x: 128px;
+@christmas-tree-h-y: 128px;
+@christmas-tree-h-offset-x: -128px;
+@christmas-tree-h-offset-y: -128px;
+@christmas-tree-h-width: 128px;
+@christmas-tree-h-height: 128px;
+@christmas-tree-h-total-width: 512px;
+@christmas-tree-h-total-height: 512px;
+@christmas-tree-h-image: '../img/spritesheet.png';
+@christmas-tree-h: 128px 128px -128px -128px 128px 128px 512px 512px '../img/spritesheet.png' 'christmas-tree_h';
+@drop-name: 'drop';
+@drop-x: 256px;
+@drop-y: 0px;
+@drop-offset-x: -256px;
+@drop-offset-y: 0px;
+@drop-width: 128px;
+@drop-height: 128px;
+@drop-total-width: 512px;
+@drop-total-height: 512px;
+@drop-image: '../img/spritesheet.png';
+@drop: 256px 0px -256px 0px 128px 128px 512px 512px '../img/spritesheet.png' 'drop';
+@eye-mask-name: 'eye-mask';
+@eye-mask-x: 256px;
+@eye-mask-y: 128px;
+@eye-mask-offset-x: -256px;
+@eye-mask-offset-y: -128px;
+@eye-mask-width: 128px;
+@eye-mask-height: 128px;
+@eye-mask-total-width: 512px;
+@eye-mask-total-height: 512px;
+@eye-mask-image: '../img/spritesheet.png';
+@eye-mask: 256px 128px -256px -128px 128px 128px 512px 512px '../img/spritesheet.png' 'eye-mask';
+@food-1-name: 'food-1';
+@food-1-x: 0px;
+@food-1-y: 256px;
+@food-1-offset-x: 0px;
+@food-1-offset-y: -256px;
+@food-1-width: 128px;
+@food-1-height: 128px;
+@food-1-total-width: 512px;
+@food-1-total-height: 512px;
+@food-1-image: '../img/spritesheet.png';
+@food-1: 0px 256px 0px -256px 128px 128px 512px 512px '../img/spritesheet.png' 'food-1';
+@food-1-h-name: 'food-1_h';
+@food-1-h-x: 0px;
+@food-1-h-y: 0px;
+@food-1-h-offset-x: 0px;
+@food-1-h-offset-y: 0px;
+@food-1-h-width: 128px;
+@food-1-h-height: 128px;
+@food-1-h-total-width: 512px;
+@food-1-h-total-height: 512px;
+@food-1-h-image: '../img/spritesheet.png';
+@food-1-h: 0px 0px 0px 0px 128px 128px 512px 512px '../img/spritesheet.png' 'food-1_h';
+@food-name: 'food';
+@food-x: 256px;
+@food-y: 256px;
+@food-offset-x: -256px;
+@food-offset-y: -256px;
+@food-width: 128px;
+@food-height: 128px;
+@food-total-width: 512px;
+@food-total-height: 512px;
+@food-image: '../img/spritesheet.png';
+@food: 256px 256px -256px -256px 128px 128px 512px 512px '../img/spritesheet.png' 'food';
+@food-h-name: 'food_h';
+@food-h-x: 384px;
+@food-h-y: 0px;
+@food-h-offset-x: -384px;
+@food-h-offset-y: 0px;
+@food-h-width: 128px;
+@food-h-height: 128px;
+@food-h-total-width: 512px;
+@food-h-total-height: 512px;
+@food-h-image: '../img/spritesheet.png';
+@food-h: 384px 0px -384px 0px 128px 128px 512px 512px '../img/spritesheet.png' 'food_h';
+@man-in-a-party-dancing-with-people-name: 'man-in-a-party-dancing-with-people';
+@man-in-a-party-dancing-with-people-x: 384px;
+@man-in-a-party-dancing-with-people-y: 128px;
+@man-in-a-party-dancing-with-people-offset-x: -384px;
+@man-in-a-party-dancing-with-people-offset-y: -128px;
+@man-in-a-party-dancing-with-people-width: 128px;
+@man-in-a-party-dancing-with-people-height: 128px;
+@man-in-a-party-dancing-with-people-total-width: 512px;
+@man-in-a-party-dancing-with-people-total-height: 512px;
+@man-in-a-party-dancing-with-people-image: '../img/spritesheet.png';
+@man-in-a-party-dancing-with-people: 384px 128px -384px -128px 128px 128px 512px 512px '../img/spritesheet.png' 'man-in-a-party-dancing-with-people';
+@party-name: 'party';
+@party-x: 384px;
+@party-y: 256px;
+@party-offset-x: -384px;
+@party-offset-y: -256px;
+@party-width: 128px;
+@party-height: 128px;
+@party-total-width: 512px;
+@party-total-height: 512px;
+@party-image: '../img/spritesheet.png';
+@party: 384px 256px -384px -256px 128px 128px 512px 512px '../img/spritesheet.png' 'party';
+@party-h-name: 'party_h';
+@party-h-x: 0px;
+@party-h-y: 384px;
+@party-h-offset-x: 0px;
+@party-h-offset-y: -384px;
+@party-h-width: 128px;
+@party-h-height: 128px;
+@party-h-total-width: 512px;
+@party-h-total-height: 512px;
+@party-h-image: '../img/spritesheet.png';
+@party-h: 0px 384px 0px -384px 128px 128px 512px 512px '../img/spritesheet.png' 'party_h';
+@wizard-name: 'wizard';
+@wizard-x: 128px;
+@wizard-y: 384px;
+@wizard-offset-x: -128px;
+@wizard-offset-y: -384px;
+@wizard-width: 128px;
+@wizard-height: 128px;
+@wizard-total-width: 512px;
+@wizard-total-height: 512px;
+@wizard-image: '../img/spritesheet.png';
+@wizard: 128px 384px -128px -384px 128px 128px 512px 512px '../img/spritesheet.png' 'wizard';
+@spritesheet-width: 512px;
+@spritesheet-height: 512px;
+@spritesheet-image: '../img/spritesheet.png';
+@spritesheet-sprites: @balloons @balloons-h @christmas-tree @christmas-tree-h @drop @eye-mask @food-1 @food-1-h @food @food-h @man-in-a-party-dancing-with-people @party @party-h @wizard;
+@spritesheet: 512px 512px '../img/spritesheet.png' @spritesheet-sprites;
+
+/*
+The provided classes are intended to be used with the array-like variables
+
+.icon-home {
+  .sprite-width(@icon-home);
+}
+.icon-email {
+  .sprite(@icon-email);
+}
+
+Example usage in HTML:
+
+`display: block` sprite:
+<div class="icon-home"></div>
+
+To change `display` (e.g. `display: inline-block;`), we suggest using a common CSS class:
+
+// CSS
+.icon {
+  display: inline-block;
+}
+
+// HTML
+<i class="icon icon-home"></i>
+*/
+.sprite-width(@sprite) {
+  width: extract(@sprite, 5);
+}
+
+.sprite-height(@sprite) {
+  height: extract(@sprite, 6);
+}
+
+.sprite-position(@sprite) {
+  @sprite-offset-x: extract(@sprite, 3);
+  @sprite-offset-y: extract(@sprite, 4);
+  background-position: @sprite-offset-x @sprite-offset-y;
+}
+
+.sprite-image(@sprite) {
+  @sprite-image: extract(@sprite, 9);
+  @sprite-image-bare: ~`"@{sprite-image}".slice(1, -1)`;
+  background-image: url(@sprite-image-bare);
+}
+
+.sprite(@sprite) {
+  .sprite-image(@sprite);
+  .sprite-position(@sprite);
+  .sprite-width(@sprite);
+  .sprite-height(@sprite);
+}
+
+/*
+The `.sprites` mixin generates identical output to the CSS template
+  but can be overridden inside of LESS
+
+This must be run when you have at least 2 sprites.
+  If run with a single sprite, then there will be reference errors.
+
+.sprites(@spritesheet-sprites);
+*/
+.sprites(@sprites, @i: 1) when (@i <= length(@sprites)) {
+  @sprite: extract(@sprites, @i);
+  @sprite-name: e(extract(@sprite, 10));
+  .@{sprite-name} {
+    .sprite(@sprite);
+  }
+  .sprites(@sprites, @i + 1);
+}

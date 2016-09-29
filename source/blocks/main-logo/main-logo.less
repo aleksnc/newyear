@@ -1,0 +1,59 @@
+.main-logo{
+  position:                            relative;
+  color:                               @color-second;
+  font-size:                           (@text-size-xxl)-4;
+  font-family:                         @font-family;
+  font-weight:                         700;
+  padding:                             128px 0 0;
+  padding-left:                        0px;
+  background-image:                    url('@{img-path}logo.png');
+  background-size:                     auto 120px;
+  background-position:                 50% 0;
+  background-repeat:                   no-repeat;
+  text-align:                          left;
+  display:                             inline-block;
+
+  &:hover{
+    color:                              @color-second;
+
+  }
+
+  &__wrapper{
+    display:                           inline-block;
+    width:                             auto;
+    margin:                            20px auto;
+
+    @media(min-width:768px) {
+      padding:                           0 20px;
+      margin:                            20px auto;
+    }
+
+    @media(min-width:768px) {
+      margin:                            0;
+    }
+
+    @media(min-width:1200px) {
+      padding:                           0;
+      align-self: center;
+      height: 77px;
+      max-width: 220px;
+    }
+  }
+  &__two-color{
+    color: #fff;
+  }
+
+  &__slogan{
+    color:                             #fff;
+    font-weight:                       500;
+    font-size:                         @text-size-l;
+    letter-spacing:                    7px;
+  }
+
+  @media(min-width:768px) {
+    padding:                           5px 0;
+    padding-left:                      76px;
+    background-position:               left;
+    background-size:                   auto 75px;
+  }
+}

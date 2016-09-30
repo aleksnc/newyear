@@ -1,7 +1,7 @@
 .main-header{
   font-family: @font-family-h;
   padding: 0 20px;
-  padding-bottom: 20px;
+  padding-bottom: 10px;
   display: inline-block;
 
 
@@ -9,7 +9,7 @@
     background-image: url('/img/bg.jpg');
     text-align: center;
     background-size: cover;
-    background-position: 0 -203px;
+    background-position: 0 -172px;
     padding: 20px 0;
   }
 
@@ -52,11 +52,47 @@
     height: 70px;
     color: @color-second;
     font-family: steelfishRg , sans-serif;
-    font-size: 53px;
+    font-size: 47px;
     padding: 14px 0 0;
 
     span{
-      padding: 0 12px;
+      padding: 0 20px;
+    }
+  }
+
+  &__addres {
+    font-family: 'courier new', courier, sans-serif;
+    color: #fff;
+    font-size: 20px;
+    letter-spacing: 5px;
+    position: relative;
+    display: inline-block;
+    margin-top: 15px;
+
+    &:before{
+      content: '';
+      background-image: url(/img/icon/snowflake.png);
+      background-size: cover;
+      position: absolute;
+      display: block;
+      width: 20px;
+      height: 20px;
+      border-radius: 50px;
+      top: 2px;
+      left: -30px;
+    };
+
+    &:after{
+      content: '';
+      background-image: url(/img/icon/snowflake.png);
+      background-size: cover;
+      position: absolute;
+      display: block;
+      width: 20px;
+      height: 20px;
+      border-radius: 50px;
+      top: 2px;
+      right: -30px;
     }
   }
 }

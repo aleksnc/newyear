@@ -1,0 +1,41 @@
+.other-content{
+
+  &__wrapper{
+    padding: 30px 20px;
+  }
+
+  &__title{
+    &:extend(.title);
+    text-align: left;
+  }
+
+  &__paragraph{
+    text-indent: 18px;
+    text-align: justify;
+    font-family: @font-family;
+    font-size: @text-size;
+    height: auto;
+  }
+
+  &__noniTitle{
+    padding: 20px 0;
+    display: block;
+    font-size: @text-size-l;
+    font-weight: bold;
+    color: @color-primary;
+  }
+
+  ul{
+    display: block;
+    list-style-type: disc;
+    -webkit-margin-before: 1em;
+    -webkit-margin-after: 1em;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+    -webkit-padding-start: 40px;
+  }
+
+  li{
+    list-style-type: disc;
+  }
+}
